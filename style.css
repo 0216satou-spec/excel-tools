@@ -1153,3 +1153,80 @@ footer {
   }
 
 }
+/* ========================================
+   サイト共通フッター
+======================================== */
+
+.site-footer {
+  margin-top: 60px;
+  padding: 45px 24px 30px;
+
+  background: #111827;
+  color: #d1d5db;
+
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.site-footer .footer-logo {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 12px 25px;
+
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  color: #d1d5db;
+
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+
+  text-decoration: underline;
+}
+
+.site-footer .copyright {
+  margin: 0;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   スマホ
+======================================== */
+
+@media (max-width: 620px) {
+
+  .site-footer {
+    padding: 40px 20px 25px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

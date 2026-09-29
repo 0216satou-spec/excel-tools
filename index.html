@@ -2,15 +2,16 @@
 <html lang="ja">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0FVRL8CGS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-H0FVRL8CGS');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0FVRL8CGS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H0FVRL8CGS');
+  </script>
+
   <meta charset="UTF-8">
 
   <meta
@@ -24,22 +25,23 @@
 
   <meta
     name="description"
-    content="IF、VLOOKUP、XLOOKUP、SUMIF、COUNTIF、ROUND、TEXTJOINなど30種類のExcel関数を無料で簡単に作成できます。"
+    content="IF、VLOOKUP、XLOOKUP、SUMIF、SUMIFS、COUNTIF、ROUND、TEXTJOINなど30種類のExcel関数を無料で簡単に作成できます。"
   >
 
   <link
     rel="stylesheet"
     href="style.css"
   >
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
+<!-- ========================================
      ヘッダー
-========================= -->
+========================================= -->
 
 <header class="header">
 
@@ -69,9 +71,10 @@
 </header>
 
 
-<!-- =========================
+
+<!-- ========================================
      メインビジュアル
-========================= -->
+========================================= -->
 
 <section class="hero">
 
@@ -104,12 +107,13 @@
 </section>
 
 
+
 <main>
 
 
-<!-- =========================
+<!-- ========================================
      関数一覧
-========================= -->
+========================================= -->
 
 <section
   class="section"
@@ -148,6 +152,7 @@
   </div>
 
 
+
   <!-- ========================================
        条件・判定
   ========================================= -->
@@ -161,15 +166,8 @@
       </span>
 
       <div>
-
-        <h3>
-          条件・判定
-        </h3>
-
-        <p>
-          条件によって結果を変更する
-        </p>
-
+        <h3>条件・判定</h3>
+        <p>条件によって結果を変更する</p>
       </div>
 
     </div>
@@ -177,101 +175,53 @@
 
     <div class="tool-grid">
 
-
-      <!-- IF -->
-
       <button
         class="tool-card"
         data-search="IF 条件 判定 合格 不合格 もし"
         onclick="location.href='tool.html?tool=if'"
       >
-
-        <div class="tool-icon">
-          IF
-        </div>
-
-        <h4>
-          IF関数メーカー
-        </h4>
-
-        <p>
-          条件によって結果を変更します。
-        </p>
-
+        <div class="tool-icon">IF</div>
+        <h4>IF関数メーカー</h4>
+        <p>条件によって結果を変更します。</p>
       </button>
 
-
-      <!-- IFERROR -->
 
       <button
         class="tool-card"
         data-search="IFERROR エラー 空白 エラー処理"
         onclick="location.href='tool.html?tool=iferror'"
       >
-
-        <div class="tool-icon">
-          IE
-        </div>
-
-        <h4>
-          IFERRORメーカー
-        </h4>
-
-        <p>
-          エラー時の表示を変更します。
-        </p>
-
+        <div class="tool-icon">IE</div>
+        <h4>IFERRORメーカー</h4>
+        <p>エラー時の表示を変更します。</p>
       </button>
 
-
-      <!-- AND IF -->
 
       <button
         class="tool-card"
         data-search="AND IF 複数条件 全て 両方"
         onclick="location.href='tool.html?tool=andif'"
       >
-
-        <div class="tool-icon">
-          AND
-        </div>
-
-        <h4>
-          AND＋IFメーカー
-        </h4>
-
-        <p>
-          すべての条件を満たすか判定します。
-        </p>
-
+        <div class="tool-icon">AND</div>
+        <h4>AND＋IFメーカー</h4>
+        <p>すべての条件を満たすか判定します。</p>
       </button>
 
-
-      <!-- OR IF -->
 
       <button
         class="tool-card"
         data-search="OR IF 複数条件 どれか どちらか"
         onclick="location.href='tool.html?tool=orif'"
       >
-
-        <div class="tool-icon">
-          OR
-        </div>
-
-        <h4>
-          OR＋IFメーカー
-        </h4>
-
-        <p>
-          どれかの条件を満たすか判定します。
-        </p>
-
+        <div class="tool-icon">OR</div>
+        <h4>OR＋IFメーカー</h4>
+        <p>どれかの条件を満たすか判定します。</p>
       </button>
 
     </div>
 
   </div>
+
 
 
   <!-- ========================================
@@ -287,15 +237,8 @@
       </span>
 
       <div>
-
-        <h3>
-          検索・参照
-        </h3>
-
-        <p>
-          表から必要なデータを探す
-        </p>
-
+        <h3>検索・参照</h3>
+        <p>表から必要なデータを探す</p>
       </div>
 
     </div>
@@ -303,78 +246,42 @@
 
     <div class="tool-grid">
 
-
-      <!-- VLOOKUP -->
-
       <button
         class="tool-card"
         data-search="VLOOKUP 検索 表 別シート 商品 商品コード"
         onclick="location.href='tool.html?tool=vlookup'"
       >
-
-        <div class="tool-icon">
-          V
-        </div>
-
-        <h4>
-          VLOOKUPメーカー
-        </h4>
-
-        <p>
-          表から一致するデータを取得します。
-        </p>
-
+        <div class="tool-icon">V</div>
+        <h4>VLOOKUPメーカー</h4>
+        <p>表から一致するデータを取得します。</p>
       </button>
 
-
-      <!-- XLOOKUP -->
 
       <button
         class="tool-card"
         data-search="XLOOKUP 検索 表 別シート 商品コード"
         onclick="location.href='tool.html?tool=xlookup'"
       >
-
-        <div class="tool-icon">
-          X
-        </div>
-
-        <h4>
-          XLOOKUPメーカー
-        </h4>
-
-        <p>
-          検索範囲からデータを取得します。
-        </p>
-
+        <div class="tool-icon">X</div>
+        <h4>XLOOKUPメーカー</h4>
+        <p>検索範囲からデータを取得します。</p>
       </button>
 
-
-      <!-- INDEX MATCH -->
 
       <button
         class="tool-card"
         data-search="INDEX MATCH 検索 表 参照"
         onclick="location.href='tool.html?tool=indexmatch'"
       >
-
-        <div class="tool-icon">
-          IM
-        </div>
-
-        <h4>
-          INDEX＋MATCHメーカー
-        </h4>
-
-        <p>
-          INDEXとMATCHを使って検索します。
-        </p>
-
+        <div class="tool-icon">IM</div>
+        <h4>INDEX＋MATCHメーカー</h4>
+        <p>INDEXとMATCHを使って検索します。</p>
       </button>
 
     </div>
 
   </div>
+
 
 
   <!-- ========================================
@@ -390,15 +297,8 @@
       </span>
 
       <div>
-
-        <h3>
-          条件付き集計
-        </h3>
-
-        <p>
-          条件に合うデータを集計する
-        </p>
-
+        <h3>条件付き集計</h3>
+        <p>条件に合うデータを集計する</p>
       </div>
 
     </div>
@@ -406,124 +306,64 @@
 
     <div class="tool-grid">
 
-
-      <!-- SUMIF -->
-
       <button
         class="tool-card"
         data-search="SUMIF 条件 合計 集計"
         onclick="location.href='tool.html?tool=sumif'"
       >
-
-        <div class="tool-icon">
-          Σ
-        </div>
-
-        <h4>
-          SUMIFメーカー
-        </h4>
-
-        <p>
-          1つの条件に合う数値を合計します。
-        </p>
-
+        <div class="tool-icon">Σ</div>
+        <h4>SUMIFメーカー</h4>
+        <p>1つの条件に合う数値を合計します。</p>
       </button>
 
-
-      <!-- SUMIFS -->
 
       <button
         class="tool-card"
         data-search="SUMIFS 複数条件 合計 集計"
         onclick="location.href='tool.html?tool=sumifs'"
       >
-
-        <div class="tool-icon">
-          Σ+
-        </div>
-
-        <h4>
-          SUMIFSメーカー
-        </h4>
-
-        <p>
-          複数条件に合う数値を合計します。
-        </p>
-
+        <div class="tool-icon">Σ+</div>
+        <h4>SUMIFSメーカー</h4>
+        <p>複数条件に合う数値を合計します。</p>
       </button>
 
-
-      <!-- COUNTIF -->
 
       <button
         class="tool-card"
         data-search="COUNTIF 条件 件数 数える カウント"
         onclick="location.href='tool.html?tool=countif'"
       >
-
-        <div class="tool-icon">
-          C
-        </div>
-
-        <h4>
-          COUNTIFメーカー
-        </h4>
-
-        <p>
-          条件に合う件数を数えます。
-        </p>
-
+        <div class="tool-icon">C</div>
+        <h4>COUNTIFメーカー</h4>
+        <p>条件に合う件数を数えます。</p>
       </button>
 
-
-      <!-- COUNTIFS -->
 
       <button
         class="tool-card"
         data-search="COUNTIFS 複数条件 件数 数える カウント"
         onclick="location.href='tool.html?tool=countifs'"
       >
-
-        <div class="tool-icon">
-          C+
-        </div>
-
-        <h4>
-          COUNTIFSメーカー
-        </h4>
-
-        <p>
-          複数条件に合う件数を数えます。
-        </p>
-
+        <div class="tool-icon">C+</div>
+        <h4>COUNTIFSメーカー</h4>
+        <p>複数条件に合う件数を数えます。</p>
       </button>
 
-
-      <!-- AVERAGEIF -->
 
       <button
         class="tool-card"
         data-search="AVERAGEIF 条件 平均"
         onclick="location.href='tool.html?tool=averageif'"
       >
-
-        <div class="tool-icon">
-          A+
-        </div>
-
-        <h4>
-          AVERAGEIFメーカー
-        </h4>
-
-        <p>
-          条件に合う数値の平均を求めます。
-        </p>
-
+        <div class="tool-icon">A+</div>
+        <h4>AVERAGEIFメーカー</h4>
+        <p>条件に合う数値の平均を求めます。</p>
       </button>
 
     </div>
 
   </div>
+
 
 
   <!-- ========================================
@@ -539,15 +379,8 @@
       </span>
 
       <div>
-
-        <h3>
-          基本計算
-        </h3>
-
-        <p>
-          合計・平均・最大・最小を求める
-        </p>
-
+        <h3>基本計算</h3>
+        <p>合計・平均・最大・最小を求める</p>
       </div>
 
     </div>
@@ -555,101 +388,53 @@
 
     <div class="tool-grid">
 
-
-      <!-- SUM -->
-
       <button
         class="tool-card"
         data-search="SUM 合計 足す 総合計"
         onclick="location.href='tool.html?tool=sum'"
       >
-
-        <div class="tool-icon">
-          SUM
-        </div>
-
-        <h4>
-          SUMメーカー
-        </h4>
-
-        <p>
-          指定範囲の合計を求めます。
-        </p>
-
+        <div class="tool-icon">SUM</div>
+        <h4>SUMメーカー</h4>
+        <p>指定範囲の合計を求めます。</p>
       </button>
 
-
-      <!-- AVERAGE -->
 
       <button
         class="tool-card"
         data-search="AVERAGE 平均 平均値"
         onclick="location.href='tool.html?tool=average'"
       >
-
-        <div class="tool-icon">
-          AVG
-        </div>
-
-        <h4>
-          AVERAGEメーカー
-        </h4>
-
-        <p>
-          指定範囲の平均を求めます。
-        </p>
-
+        <div class="tool-icon">AVG</div>
+        <h4>AVERAGEメーカー</h4>
+        <p>指定範囲の平均を求めます。</p>
       </button>
 
-
-      <!-- MAX -->
 
       <button
         class="tool-card"
         data-search="MAX 最大 最大値 一番大きい"
         onclick="location.href='tool.html?tool=max'"
       >
-
-        <div class="tool-icon">
-          MAX
-        </div>
-
-        <h4>
-          MAXメーカー
-        </h4>
-
-        <p>
-          指定範囲の最大値を求めます。
-        </p>
-
+        <div class="tool-icon">MAX</div>
+        <h4>MAXメーカー</h4>
+        <p>指定範囲の最大値を求めます。</p>
       </button>
 
-
-      <!-- MIN -->
 
       <button
         class="tool-card"
         data-search="MIN 最小 最小値 一番小さい"
         onclick="location.href='tool.html?tool=min'"
       >
-
-        <div class="tool-icon">
-          MIN
-        </div>
-
-        <h4>
-          MINメーカー
-        </h4>
-
-        <p>
-          指定範囲の最小値を求めます。
-        </p>
-
+        <div class="tool-icon">MIN</div>
+        <h4>MINメーカー</h4>
+        <p>指定範囲の最小値を求めます。</p>
       </button>
 
     </div>
 
   </div>
+
 
 
   <!-- ========================================
@@ -665,15 +450,8 @@
       </span>
 
       <div>
-
-        <h3>
-          数値・丸め
-        </h3>
-
-        <p>
-          四捨五入・切り上げ・切り捨て
-        </p>
-
+        <h3>数値・丸め</h3>
+        <p>四捨五入・切り上げ・切り捨て</p>
       </div>
 
     </div>
@@ -681,78 +459,42 @@
 
     <div class="tool-grid">
 
-
-      <!-- ROUND -->
-
       <button
         class="tool-card"
         data-search="ROUND 四捨五入 数値 小数"
         onclick="location.href='tool.html?tool=round'"
       >
-
-        <div class="tool-icon">
-          0.0
-        </div>
-
-        <h4>
-          ROUNDメーカー
-        </h4>
-
-        <p>
-          指定した桁数で四捨五入します。
-        </p>
-
+        <div class="tool-icon">0.0</div>
+        <h4>ROUNDメーカー</h4>
+        <p>指定した桁数で四捨五入します。</p>
       </button>
 
-
-      <!-- ROUNDUP -->
 
       <button
         class="tool-card"
         data-search="ROUNDUP 切り上げ 数値 小数"
         onclick="location.href='tool.html?tool=roundup'"
       >
-
-        <div class="tool-icon">
-          ↑
-        </div>
-
-        <h4>
-          ROUNDUPメーカー
-        </h4>
-
-        <p>
-          指定した桁数で切り上げます。
-        </p>
-
+        <div class="tool-icon">↑</div>
+        <h4>ROUNDUPメーカー</h4>
+        <p>指定した桁数で切り上げます。</p>
       </button>
 
-
-      <!-- ROUNDDOWN -->
 
       <button
         class="tool-card"
         data-search="ROUNDDOWN 切り捨て 数値 小数"
         onclick="location.href='tool.html?tool=rounddown'"
       >
-
-        <div class="tool-icon">
-          ↓
-        </div>
-
-        <h4>
-          ROUNDDOWNメーカー
-        </h4>
-
-        <p>
-          指定した桁数で切り捨てます。
-        </p>
-
+        <div class="tool-icon">↓</div>
+        <h4>ROUNDDOWNメーカー</h4>
+        <p>指定した桁数で切り捨てます。</p>
       </button>
 
     </div>
 
   </div>
+
 
 
   <!-- ========================================
@@ -768,15 +510,8 @@
       </span>
 
       <div>
-
-        <h3>
-          文字列
-        </h3>
-
-        <p>
-          文字の抽出・結合・整理をする
-        </p>
-
+        <h3>文字列</h3>
+        <p>文字の抽出・結合・整理をする</p>
       </div>
 
     </div>
@@ -784,193 +519,97 @@
 
     <div class="tool-grid">
 
-
-      <!-- LEFT -->
-
       <button
         class="tool-card"
         data-search="LEFT 左 文字 抽出 取り出す"
         onclick="location.href='tool.html?tool=left'"
       >
-
-        <div class="tool-icon">
-          L
-        </div>
-
-        <h4>
-          LEFTメーカー
-        </h4>
-
-        <p>
-          左から指定文字数を取り出します。
-        </p>
-
+        <div class="tool-icon">L</div>
+        <h4>LEFTメーカー</h4>
+        <p>左から指定文字数を取り出します。</p>
       </button>
 
-
-      <!-- RIGHT -->
 
       <button
         class="tool-card"
         data-search="RIGHT 右 文字 抽出 取り出す"
         onclick="location.href='tool.html?tool=right'"
       >
-
-        <div class="tool-icon">
-          R
-        </div>
-
-        <h4>
-          RIGHTメーカー
-        </h4>
-
-        <p>
-          右から指定文字数を取り出します。
-        </p>
-
+        <div class="tool-icon">R</div>
+        <h4>RIGHTメーカー</h4>
+        <p>右から指定文字数を取り出します。</p>
       </button>
 
-
-      <!-- MID -->
 
       <button
         class="tool-card"
         data-search="MID 途中 中間 文字 抽出 取り出す"
         onclick="location.href='tool.html?tool=mid'"
       >
-
-        <div class="tool-icon">
-          MID
-        </div>
-
-        <h4>
-          MIDメーカー
-        </h4>
-
-        <p>
-          指定位置から文字を取り出します。
-        </p>
-
+        <div class="tool-icon">MID</div>
+        <h4>MIDメーカー</h4>
+        <p>指定位置から文字を取り出します。</p>
       </button>
 
-
-      <!-- TEXTJOIN -->
 
       <button
         class="tool-card"
         data-search="TEXTJOIN 文字 結合 区切り つなげる"
         onclick="location.href='tool.html?tool=textjoin'"
       >
-
-        <div class="tool-icon">
-          TJ
-        </div>
-
-        <h4>
-          TEXTJOINメーカー
-        </h4>
-
-        <p>
-          区切り文字を使って文字を結合します。
-        </p>
-
+        <div class="tool-icon">TJ</div>
+        <h4>TEXTJOINメーカー</h4>
+        <p>区切り文字を使って文字を結合します。</p>
       </button>
 
-
-      <!-- LEN -->
 
       <button
         class="tool-card"
         data-search="LEN 文字数 数える 長さ"
         onclick="location.href='tool.html?tool=len'"
       >
-
-        <div class="tool-icon">
-          LEN
-        </div>
-
-        <h4>
-          LENメーカー
-        </h4>
-
-        <p>
-          セル内の文字数を数えます。
-        </p>
-
+        <div class="tool-icon">LEN</div>
+        <h4>LENメーカー</h4>
+        <p>セル内の文字数を数えます。</p>
       </button>
 
-
-      <!-- TRIM -->
 
       <button
         class="tool-card"
         data-search="TRIM 空白 スペース 削除 余分"
         onclick="location.href='tool.html?tool=trim'"
       >
-
-        <div class="tool-icon">
-          TR
-        </div>
-
-        <h4>
-          TRIMメーカー
-        </h4>
-
-        <p>
-          余分なスペースを削除します。
-        </p>
-
+        <div class="tool-icon">TR</div>
+        <h4>TRIMメーカー</h4>
+        <p>余分なスペースを削除します。</p>
       </button>
 
-
-      <!-- CONCAT -->
 
       <button
         class="tool-card"
         data-search="CONCAT 文字 結合 セル つなげる"
         onclick="location.href='tool.html?tool=concat'"
       >
-
-        <div class="tool-icon">
-          ＋
-        </div>
-
-        <h4>
-          CONCATメーカー
-        </h4>
-
-        <p>
-          複数セルの文字を結合します。
-        </p>
-
+        <div class="tool-icon">＋</div>
+        <h4>CONCATメーカー</h4>
+        <p>複数セルの文字を結合します。</p>
       </button>
 
-
-      <!-- SUBSTITUTE -->
 
       <button
         class="tool-card"
         data-search="SUBSTITUTE 文字 置換 変更 入れ替え"
         onclick="location.href='tool.html?tool=substitute'"
       >
-
-        <div class="tool-icon">
-          置
-        </div>
-
-        <h4>
-          SUBSTITUTEメーカー
-        </h4>
-
-        <p>
-          指定した文字を別の文字に置換します。
-        </p>
-
+        <div class="tool-icon">置</div>
+        <h4>SUBSTITUTEメーカー</h4>
+        <p>指定した文字を別の文字に置換します。</p>
       </button>
 
     </div>
 
   </div>
+
 
 
   <!-- ========================================
@@ -986,15 +625,8 @@
       </span>
 
       <div>
-
-        <h3>
-          日付・営業日
-        </h3>
-
-        <p>
-          月末・○か月後・営業日を計算する
-        </p>
-
+        <h3>日付・営業日</h3>
+        <p>月末・○か月後・営業日を計算する</p>
       </div>
 
     </div>
@@ -1002,78 +634,42 @@
 
     <div class="tool-grid">
 
-
-      <!-- EDATE -->
-
       <button
         class="tool-card"
         data-search="EDATE 日付 月 何ヶ月後 何ヶ月前"
         onclick="location.href='tool.html?tool=edate'"
       >
-
-        <div class="tool-icon">
-          月
-        </div>
-
-        <h4>
-          EDATEメーカー
-        </h4>
-
-        <p>
-          ○か月後・前の日付を求めます。
-        </p>
-
+        <div class="tool-icon">月</div>
+        <h4>EDATEメーカー</h4>
+        <p>○か月後・前の日付を求めます。</p>
       </button>
 
-
-      <!-- EOMONTH -->
 
       <button
         class="tool-card"
         data-search="EOMONTH 月末 日付 月末日"
         onclick="location.href='tool.html?tool=eomonth'"
       >
-
-        <div class="tool-icon">
-          末
-        </div>
-
-        <h4>
-          EOMONTHメーカー
-        </h4>
-
-        <p>
-          指定した月の月末日を求めます。
-        </p>
-
+        <div class="tool-icon">末</div>
+        <h4>EOMONTHメーカー</h4>
+        <p>指定した月の月末日を求めます。</p>
       </button>
 
-
-      <!-- WORKDAY -->
 
       <button
         class="tool-card"
         data-search="WORKDAY 営業日 土日 日付 平日"
         onclick="location.href='tool.html?tool=workday'"
       >
-
-        <div class="tool-icon">
-          営
-        </div>
-
-        <h4>
-          WORKDAYメーカー
-        </h4>
-
-        <p>
-          土日を除いた営業日を計算します。
-        </p>
-
+        <div class="tool-icon">営</div>
+        <h4>WORKDAYメーカー</h4>
+        <p>土日を除いた営業日を計算します。</p>
       </button>
 
     </div>
 
   </div>
+
 
 
   <!-- 検索結果なし -->
@@ -1088,9 +684,10 @@
 </section>
 
 
-<!-- =========================
-     このサイトの使い方
-========================= -->
+
+<!-- ========================================
+     使い方
+========================================= -->
 
 <section class="section">
 
@@ -1112,7 +709,6 @@
 
 
   <div class="tool-grid">
-
 
     <div class="tool-card">
 
@@ -1169,9 +765,10 @@
 </section>
 
 
-<!-- =========================
-     About
-========================= -->
+
+<!-- ========================================
+     このサイトについて
+========================================= -->
 
 <section
   class="section"
@@ -1218,9 +815,10 @@
 </section>
 
 
-<!-- =========================
+
+<!-- ========================================
      FAQ
-========================= -->
+========================================= -->
 
 <section class="section">
 
@@ -1285,28 +883,48 @@
 </main>
 
 
-<!-- =========================
+
+<!-- ========================================
      フッター
-========================= -->
+========================================= -->
 
-<footer>
+<footer class="site-footer">
 
-  <p class="footer-logo">
-    Excelかんたんツール
-  </p>
+  <div class="footer-inner">
 
-  <p>
-    Excelの「分からない」を、かんたんに。
-  </p>
+    <p class="footer-logo">
+      Excelかんたんツール
+    </p>
 
-  <p class="copyright">
-    © 2026 Excelかんたんツール
-  </p>
+    <div class="footer-links">
+
+      <a href="index.html">
+        ホーム
+      </a>
+
+      <a href="privacy.html">
+        プライバシーポリシー
+      </a>
+
+      <a href="contact.html">
+        お問い合わせ
+      </a>
+
+    </div>
+
+    <p class="copyright">
+      © 2026 Excelかんたんツール
+    </p>
+
+  </div>
 
 </footer>
 
 
-<!-- コピー通知 -->
+
+<!-- ========================================
+     コピー通知
+========================================= -->
 
 <div
   id="toast"
@@ -1315,6 +933,11 @@
   コピーしました
 </div>
 
+
+
+<!-- ========================================
+     JavaScript
+========================================= -->
 
 <script src="script.js"></script>
 

@@ -2,15 +2,22 @@
 <html lang="ja">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0FVRL8CGS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-H0FVRL8CGS');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0FVRL8CGS"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-H0FVRL8CGS');
+  </script>
+
+
   <meta charset="UTF-8">
 
   <meta
@@ -18,15 +25,18 @@
     content="width=device-width, initial-scale=1.0"
   >
 
+
   <title id="pageTitle">
     Excel関数メーカー｜Excelかんたんツール
   </title>
+
 
   <meta
     id="pageDescription"
     name="description"
     content="Excel関数を無料で簡単に作成できます。"
   >
+
 
   <link
     rel="stylesheet"
@@ -36,12 +46,13 @@
 </head>
 
 
+
 <body>
 
 
-<!-- =========================
+<!-- ========================================
      ヘッダー
-========================= -->
+========================================= -->
 
 <header class="header">
 
@@ -53,6 +64,7 @@
     >
       Excelかんたんツール
     </a>
+
 
     <nav>
 
@@ -71,9 +83,10 @@
 </header>
 
 
-<!-- =========================
+
+<!-- ========================================
      パンくず
-========================= -->
+========================================= -->
 
 <div class="breadcrumb">
 
@@ -96,14 +109,17 @@
 </div>
 
 
-<!-- =========================
+
+<!-- ========================================
      メイン
-========================= -->
+========================================= -->
 
 <main class="tool-page">
 
 
-  <!-- タイトル -->
+  <!-- ========================================
+       タイトル
+  ========================================= -->
 
   <section class="tool-page-header">
 
@@ -111,9 +127,11 @@
       EXCEL FUNCTION
     </p>
 
+
     <h1 id="generatorTitle">
       Excel関数メーカー
     </h1>
+
 
     <p
       id="generatorDescription"
@@ -126,7 +144,10 @@
   </section>
 
 
-  <!-- 数式メーカー -->
+
+  <!-- ========================================
+       数式メーカー
+  ========================================= -->
 
   <section class="generator-box">
 
@@ -134,10 +155,13 @@
       数式を作成
     </h2>
 
+
     <p class="generator-guide">
       下の項目を入力してください。
     </p>
 
+
+    <!-- script.jsによって入力欄を生成 -->
 
     <div id="formArea">
     </div>
@@ -151,11 +175,17 @@
     </button>
 
 
+
+    <!-- ========================================
+         生成結果
+    ========================================= -->
+
     <div class="result-area">
 
       <p class="result-label">
         生成された数式
       </p>
+
 
       <div class="formula-box">
 
@@ -178,7 +208,10 @@
   </section>
 
 
-  <!-- 使用例 -->
+
+  <!-- ========================================
+       使用例
+  ========================================= -->
 
   <section class="content-box">
 
@@ -186,13 +219,17 @@
       こんなときに使えます
     </h2>
 
+
     <p id="exampleText">
     </p>
 
   </section>
 
 
-  <!-- 基本的な使い方 -->
+
+  <!-- ========================================
+       基本的な使い方
+  ========================================= -->
 
   <section class="content-box">
 
@@ -200,25 +237,31 @@
       基本的な使い方
     </h2>
 
+
     <p>
       上の入力欄に必要なセルや条件を入力して、
       「数式を作成」を押してください。
     </p>
+
 
     <p>
       作成された数式は
       「数式をコピー」からコピーできます。
     </p>
 
+
     <p>
-      コピーした数式をExcelのセルに貼り付ければ
+      コピーした数式をExcelのセルに貼り付ければ、
       そのまま使用できます。
     </p>
 
   </section>
 
 
-  <!-- 初心者向け -->
+
+  <!-- ========================================
+       初心者向け
+  ========================================= -->
 
   <section class="content-box">
 
@@ -226,11 +269,13 @@
       Excel初心者の方へ
     </h2>
 
+
     <p>
       Excel関数では、
       A2やC2:C100のような
       「セル」や「セル範囲」を指定します。
     </p>
+
 
     <div class="mini-example">
 
@@ -239,10 +284,12 @@
         ＝ A列の2行目
       </p>
 
+
       <p>
         <strong>A2:A100</strong>
         ＝ A2からA100まで
       </p>
+
 
       <p>
         <strong>商品一覧!A:A</strong>
@@ -254,7 +301,10 @@
   </section>
 
 
-  <!-- よくあるミス -->
+
+  <!-- ========================================
+       よくあるミス
+  ========================================= -->
 
   <section class="content-box">
 
@@ -262,7 +312,9 @@
       よくあるミス
     </h2>
 
+
     <div class="mistake-list">
+
 
       <div class="mistake-item">
 
@@ -279,6 +331,7 @@
       </div>
 
 
+
       <div class="mistake-item">
 
         <h3>
@@ -291,6 +344,7 @@
         </p>
 
       </div>
+
 
 
       <div class="mistake-item">
@@ -306,12 +360,16 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
-  <!-- 関連ツール -->
+
+  <!-- ========================================
+       関連ツール
+  ========================================= -->
 
   <section class="content-box">
 
@@ -319,27 +377,33 @@
       他のExcel関数も使ってみる
     </h2>
 
+
     <div class="related-tools">
 
       <a href="tool.html?tool=if">
         IF関数メーカー
       </a>
 
+
       <a href="tool.html?tool=vlookup">
         VLOOKUPメーカー
       </a>
+
 
       <a href="tool.html?tool=xlookup">
         XLOOKUPメーカー
       </a>
 
+
       <a href="tool.html?tool=sumif">
         SUMIFメーカー
       </a>
 
+
       <a href="tool.html?tool=sumifs">
         SUMIFSメーカー
       </a>
+
 
       <a href="tool.html?tool=countif">
         COUNTIFメーカー
@@ -350,7 +414,10 @@
   </section>
 
 
-  <!-- 一覧へ -->
+
+  <!-- ========================================
+       関数一覧へ戻る
+  ========================================= -->
 
   <div class="back-home-area">
 
@@ -367,28 +434,57 @@
 </main>
 
 
-<!-- =========================
+
+<!-- ========================================
      フッター
-========================= -->
+========================================= -->
 
-<footer>
+<footer class="site-footer">
 
-  <p class="footer-logo">
-    Excelかんたんツール
-  </p>
+  <div class="footer-inner">
 
-  <p>
-    Excelの「分からない」を、かんたんに。
-  </p>
+    <p class="footer-logo">
+      Excelかんたんツール
+    </p>
 
-  <p class="copyright">
-    © 2026 Excelかんたんツール
-  </p>
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        ホーム
+      </a>
+
+
+      <a href="index.html#tools">
+        関数一覧
+      </a>
+
+
+      <a href="privacy.html">
+        プライバシーポリシー
+      </a>
+
+
+      <a href="contact.html">
+        お問い合わせ
+      </a>
+
+    </div>
+
+
+    <p class="copyright">
+      © 2026 Excelかんたんツール
+    </p>
+
+  </div>
 
 </footer>
 
 
-<!-- コピー通知 -->
+
+<!-- ========================================
+     コピー通知
+========================================= -->
 
 <div
   id="toast"
@@ -398,8 +494,18 @@
 </div>
 
 
+
+<!-- ========================================
+     メインJavaScript
+========================================= -->
+
 <script src="script.js"></script>
 
+
+
+<!-- ========================================
+     ツールページ読み込み
+========================================= -->
 
 <script>
 
@@ -411,6 +517,7 @@
         new URLSearchParams(
           window.location.search
         );
+
 
       const toolName =
         params.get("tool");
@@ -431,10 +538,12 @@
         ).textContent =
           "関数が見つかりません";
 
+
         document.getElementById(
           "generatorDescription"
         ).textContent =
           "指定されたExcel関数が見つかりませんでした。";
+
 
         document.getElementById(
           "formArea"
@@ -447,15 +556,20 @@
   );
 
 
+
   function loadToolPage(toolName) {
 
     currentTool = toolName;
+
 
     const tool =
       tools[toolName];
 
 
-    /* タイトル */
+
+    /* ========================================
+       タイトル
+    ========================================= */
 
     document.getElementById(
       "generatorTitle"
@@ -463,7 +577,10 @@
       tool.title;
 
 
-    /* 説明 */
+
+    /* ========================================
+       説明
+    ========================================= */
 
     document.getElementById(
       "generatorDescription"
@@ -471,7 +588,10 @@
       tool.description;
 
 
-    /* 使用例 */
+
+    /* ========================================
+       使用例
+    ========================================= */
 
     document.getElementById(
       "exampleText"
@@ -479,7 +599,10 @@
       tool.example;
 
 
-    /* パンくず */
+
+    /* ========================================
+       パンくず
+    ========================================= */
 
     document.getElementById(
       "breadcrumbCurrent"
@@ -487,19 +610,26 @@
       tool.title;
 
 
-    /* ブラウザタイトル */
+
+    /* ========================================
+       ブラウザタイトル
+    ========================================= */
 
     document.title =
       tool.title +
       "｜無料でExcel数式を自動作成";
 
 
-    /* description */
+
+    /* ========================================
+       meta description
+    ========================================= */
 
     const description =
       document.getElementById(
         "pageDescription"
       );
+
 
     description.setAttribute(
       "content",
@@ -509,7 +639,10 @@
     );
 
 
-    /* 使い方タイトル */
+
+    /* ========================================
+       使い方タイトル
+    ========================================= */
 
     document.getElementById(
       "usageTitle"
@@ -518,7 +651,10 @@
       "の使い方";
 
 
-    /* フォーム作成 */
+
+    /* ========================================
+       入力フォーム作成
+    ========================================= */
 
     buildForm(tool);
 
@@ -528,4 +664,5 @@
 
 
 </body>
+
 </html>
