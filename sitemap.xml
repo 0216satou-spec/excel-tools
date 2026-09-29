@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://0216satou-spec.github.io/excel-tools/</loc>
   </url>
-
+  <url>
+    <loc>https://0216satou-spec.github.io/excel-tools/if.html</loc>
+  </url>
+  <url>
+    <loc>https://0216satou-spec.github.io/excel-tools/vlookup.html</loc>
+  </url>
+  <url>
+    <loc>https://0216satou-spec.github.io/excel-tools/xlookup.html</loc>
+  </url>
+  <url>
+    <loc>https://0216satou-spec.github.io/excel-tools/sumifs.html</loc>
+  </url>
+  <url>
+    <loc>https://0216satou-spec.github.io/excel-tools/countif.html</loc>
+  </url>
+  <url>
+    <loc>https://0216satou-spec.github.io/excel-tools/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://0216satou-spec.github.io/excel-tools/contact.html</loc>
+  </url>
 </urlset>

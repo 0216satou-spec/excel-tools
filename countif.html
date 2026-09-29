@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0FVRL8CGS"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-H0FVRL8CGS');
+  </script>
+
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+
+  <title id="pageTitle">
+    Excel関数メーカー｜Excelかんたんツール
+  </title>
+
+
+  <meta
+    id="pageDescription"
+    name="description"
+    content="Excel関数を無料で簡単に作成できます。"
+  >
+
+
+  <link rel="canonical" href="https://0216satou-spec.github.io/excel-tools/countif.html">
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+
+<body>
+
+
+<!-- ========================================
+     ヘッダー
+========================================= -->
+
+<header class="header">
+
+  <div class="header-inner">
+
+    <a
+      href="index.html"
+      class="logo"
+    >
+      Excelかんたんツール
+    </a>
+
+
+    <nav>
+
+      <a href="index.html#tools">
+        関数一覧
+      </a>
+
+      <a href="index.html#about">
+        このサイトについて
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- ========================================
+     パンくず
+========================================= -->
+
+<div class="breadcrumb">
+
+  <a href="index.html">
+    ホーム
+  </a>
+
+  <span>›</span>
+
+  <a href="index.html#tools">
+    Excel関数
+  </a>
+
+  <span>›</span>
+
+  <span id="breadcrumbCurrent">
+    関数メーカー
+  </span>
+
+</div>
+
+
+
+<!-- ========================================
+     メイン
+========================================= -->
+
+<main class="tool-page">
+
+
+  <!-- ========================================
+       タイトル
+  ========================================= -->
+
+  <section class="tool-page-header">
+
+    <p class="section-label">
+      EXCEL FUNCTION
+    </p>
+
+
+    <h1 id="generatorTitle">
+      Excel関数メーカー
+    </h1>
+
+
+    <p
+      id="generatorDescription"
+      class="tool-page-description"
+    >
+      必要な項目を入力すると、
+      Excelで使える数式を自動作成します。
+    </p>
+
+  </section>
+
+
+
+  <!-- ========================================
+       数式メーカー
+  ========================================= -->
+
+  <section class="generator-box">
+
+    <h2>
+      数式を作成
+    </h2>
+
+
+    <p class="generator-guide">
+      下の項目を入力してください。
+    </p>
+
+
+    <!-- script.jsによって入力欄を生成 -->
+
+    <div id="formArea">
+    </div>
+
+
+    <button
+      class="generate-button"
+      onclick="generateFormula()"
+    >
+      数式を作成
+    </button>
+
+
+
+    <!-- ========================================
+         生成結果
+    ========================================= -->
+
+    <div class="result-area">
+
+      <p class="result-label">
+        生成された数式
+      </p>
+
+
+      <div class="formula-box">
+
+        <code id="formulaResult">
+          入力後「数式を作成」を押してください
+        </code>
+
+      </div>
+
+
+      <button
+        class="copy-button"
+        onclick="copyFormula()"
+      >
+        数式をコピー
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       使用例
+  ========================================= -->
+
+  <section class="content-box">
+
+    <h2>
+      こんなときに使えます
+    </h2>
+
+
+    <p id="exampleText">
+    </p>
+
+  </section>
+
+
+
+  <!-- ========================================
+       基本的な使い方
+  ========================================= -->
+
+  <section class="content-box">
+
+    <h2 id="usageTitle">
+      基本的な使い方
+    </h2>
+
+
+    <p>
+      上の入力欄に必要なセルや条件を入力して、
+      「数式を作成」を押してください。
+    </p>
+
+
+    <p>
+      作成された数式は
+      「数式をコピー」からコピーできます。
+    </p>
+
+
+    <p>
+      コピーした数式をExcelのセルに貼り付ければ、
+      そのまま使用できます。
+    </p>
+
+  </section>
+
+
+
+  <!-- ========================================
+       初心者向け
+  ========================================= -->
+
+  <section class="content-box">
+
+    <h2>
+      Excel初心者の方へ
+    </h2>
+
+
+    <p>
+      Excel関数では、
+      A2やC2:C100のような
+      「セル」や「セル範囲」を指定します。
+    </p>
+
+
+    <div class="mini-example">
+
+      <p>
+        <strong>A2</strong>
+        ＝ A列の2行目
+      </p>
+
+
+      <p>
+        <strong>A2:A100</strong>
+        ＝ A2からA100まで
+      </p>
+
+
+      <p>
+        <strong>商品一覧!A:A</strong>
+        ＝ 「商品一覧」というシートのA列
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       よくあるミス
+  ========================================= -->
+
+  <section class="content-box">
+
+    <h2>
+      よくあるミス
+    </h2>
+
+
+    <div class="mistake-list">
+
+
+      <div class="mistake-item">
+
+        <h3>
+          セル範囲が間違っている
+        </h3>
+
+        <p>
+          A2:A100など、
+          実際のExcelデータが入っている範囲を
+          指定してください。
+        </p>
+
+      </div>
+
+
+
+      <div class="mistake-item">
+
+        <h3>
+          シート名が違う
+        </h3>
+
+        <p>
+          別シートを参照する場合は、
+          実際のシート名と一致しているか確認してください。
+        </p>
+
+      </div>
+
+
+
+      <div class="mistake-item">
+
+        <h3>
+          全角文字が混ざっている
+        </h3>
+
+        <p>
+          セル番号や記号は、
+          半角英数字で入力するのがおすすめです。
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       関連ツール
+  ========================================= -->
+
+  <section class="content-box">
+
+    <h2>
+      他のExcel関数も使ってみる
+    </h2>
+
+
+    <div class="related-tools">
+
+      <a href="tool.html?tool=if">
+        IF関数メーカー
+      </a>
+
+
+      <a href="tool.html?tool=vlookup">
+        VLOOKUPメーカー
+      </a>
+
+
+      <a href="tool.html?tool=xlookup">
+        XLOOKUPメーカー
+      </a>
+
+
+      <a href="tool.html?tool=sumif">
+        SUMIFメーカー
+      </a>
+
+
+      <a href="tool.html?tool=sumifs">
+        SUMIFSメーカー
+      </a>
+
+
+      <a href="tool.html?tool=countif">
+        COUNTIFメーカー
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       関数一覧へ戻る
+  ========================================= -->
+
+  <div class="back-home-area">
+
+    <a
+      href="index.html#tools"
+      class="back-home-button"
+    >
+      ← Excel関数一覧へ戻る
+    </a>
+
+  </div>
+
+
+</main>
+
+
+
+<!-- ========================================
+     フッター
+========================================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <p class="footer-logo">
+      Excelかんたんツール
+    </p>
+
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        ホーム
+      </a>
+
+
+      <a href="index.html#tools">
+        関数一覧
+      </a>
+
+
+      <a href="privacy.html">
+        プライバシーポリシー
+      </a>
+
+
+      <a href="contact.html">
+        お問い合わせ
+      </a>
+
+    </div>
+
+
+    <p class="copyright">
+      © 2026 Excelかんたんツール
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- ========================================
+     コピー通知
+========================================= -->
+
+<div
+  id="toast"
+  class="toast"
+>
+  コピーしました
+</div>
+
+
+
+<!-- ========================================
+     メインJavaScript
+========================================= -->
+
+<script src="script.js"></script>
+
+
+
+<!-- ========================================
+     ツールページ読み込み
+========================================= -->
+
+<script>
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+      const toolName = "countif";
+
+
+      if (
+        toolName &&
+        typeof tools !== "undefined" &&
+        tools[toolName]
+      ) {
+
+        loadToolPage(toolName);
+
+      } else {
+
+        document.getElementById(
+          "generatorTitle"
+        ).textContent =
+          "関数が見つかりません";
+
+
+        document.getElementById(
+          "generatorDescription"
+        ).textContent =
+          "指定されたExcel関数が見つかりませんでした。";
+
+
+        document.getElementById(
+          "formArea"
+        ).innerHTML =
+          '<p>関数一覧からツールを選択してください。</p>';
+
+      }
+
+    }
+  );
+
+
+
+  function loadToolPage(toolName) {
+
+    currentTool = toolName;
+
+
+    const tool =
+      tools[toolName];
+
+
+
+    /* ========================================
+       タイトル
+    ========================================= */
+
+    document.getElementById(
+      "generatorTitle"
+    ).textContent =
+      tool.title;
+
+
+
+    /* ========================================
+       説明
+    ========================================= */
+
+    document.getElementById(
+      "generatorDescription"
+    ).textContent =
+      tool.description;
+
+
+
+    /* ========================================
+       使用例
+    ========================================= */
+
+    document.getElementById(
+      "exampleText"
+    ).textContent =
+      tool.example;
+
+
+
+    /* ========================================
+       パンくず
+    ========================================= */
+
+    document.getElementById(
+      "breadcrumbCurrent"
+    ).textContent =
+      tool.title;
+
+
+
+    /* ========================================
+       ブラウザタイトル
+    ========================================= */
+
+    document.title =
+      tool.title +
+      "｜無料でExcel数式を自動作成";
+
+
+
+    /* ========================================
+       meta description
+    ========================================= */
+
+    const description =
+      document.getElementById(
+        "pageDescription"
+      );
+
+
+    description.setAttribute(
+      "content",
+      tool.title +
+      "を無料で作成できます。" +
+      tool.description
+    );
+
+
+
+    /* ========================================
+       使い方タイトル
+    ========================================= */
+
+    document.getElementById(
+      "usageTitle"
+    ).textContent =
+      tool.title +
+      "の使い方";
+
+
+
+    /* ========================================
+       入力フォーム作成
+    ========================================= */
+
+    buildForm(tool);
+
+  }
+
+</script>
+
+
+</body>
+
+</html>
